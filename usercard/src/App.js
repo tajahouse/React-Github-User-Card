@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import UserData from "./UserData";
 
-function App() {
-  return (
+class App extends React.Component {
+  constructor(){
+    super();
+    this.state={
+      users:[]
+    };
+  }
+    componentDidMount() {
+      fetch("https://api.github.com/users/tajahouse")
+      .then(res => res.json())
+      .then(profile => this.setState({users: profile}))
+      .catch(err=> console.log("Naw girl", err));
+    };
+    render() {
+      console.log(this.state.users.login);
+       return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+      <UserData users={this.state.users}/>     
+
+    </div>  
+       );
+       }
+  }
+
 
 export default App;
