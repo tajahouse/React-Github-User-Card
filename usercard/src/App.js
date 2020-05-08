@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import UserData from "./UserData";
+import UserData from "./components/UserData";
+import axios from "axios";
 
 class App extends React.Component {
   constructor(){
@@ -14,9 +15,12 @@ class App extends React.Component {
       .then(res => res.json())
       .then(profile => this.setState({users: profile}))
       .catch(err=> console.log("Naw girl", err));
+    
     };
+
+
     render() {
-      console.log(this.state.users.login);
+      console.log(this.state.users);
        return (
     <div className="App">
       <UserData users={this.state.users}/>     

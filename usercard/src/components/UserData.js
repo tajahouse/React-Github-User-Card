@@ -4,7 +4,7 @@ const UserData = ({users}) =>{
     return (
         <div className="user-wrapper">
             <h1>Name: {users.name}</h1>
-            <img src={users.avatar_url} alt="Profile Image" className="user-image"/>
+    <img src={users.avatar_url} alt="Profile Image" className="user-image"/>
     <p>Location: {users.location}</p>
     <p>Followers: {users.followers}</p>
     <p>Following: {users.following}</p>
