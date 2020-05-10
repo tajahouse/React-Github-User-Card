@@ -25,13 +25,17 @@ class App extends React.Component {
     // .then(res=>console.log(res))
     .then(profile => this.setState({friends: profile.data}))
     .catch(err=> console.log("Naw girl", err));
+
+    this.setState({
+      input:""
+    })
   }
 
   handleChange = (e) => {
     this.setState({
       input: e.target.value,
     });
-  };
+   };
 
   componentDidMount() {
     Axios.get(`https://api.github.com/users/${this.state.card}`)

@@ -15,10 +15,10 @@ margin-left: 17%;
 
 }
  .user-wrapper{
-   background-color: rgb(13, 236, 28);
+   background-color: rgb(250, 250, 246);
    max-width: 20%;
-   max-height:65vh;
-   box-shadow:2px 2px 3px rgb(242, 247, 243);
+   max-height:75vh;
+   box-shadow:2px 2px 3px rgb(227, 238, 7);
    display: flex;
    flex-direction: column;
    font-family: 'Balsamiq Sans', cursive;
@@ -30,46 +30,54 @@ margin-left: 17%;
  .user-image{
    max-width: 50%;
    margin-left: 2.5%;
+   display: inline;
+   align-self: center;
  }
 
  .friends-wrapper{
-  background-color: rgb(49, 16, 120);
-  max-width: 30%;
-  width:90%;
-  height: 100%;
-  margin-top: 2%;
-  box-shadow:2px 2px 3px rgb(27, 189, 65);
-  /* display: flex;
-  flex-direction: column; */
+  background-color: rgb(230, 222, 19);
+  max-width: 100%;
+  max-height:85vh;
+  box-shadow:2px 2px 3px rgb(242, 247, 243);
+  display: flex;
+  flex-direction: column;
   font-family: 'Balsamiq Sans', cursive;
-  /* margin-left: 35%;
-  margin-top: 2%; */
-  color:white;
-  font-size: 76%;
-  margin-left: 12rem;
- }
+  margin-left: 20%;
+  margin-top: 5%;
+  color: rgb(49, 16, 120);
+  width:75%;
+}
 
  .friends{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
-  grid-auto-rows: auto;
-  grid-gap: 3px;
-  grid-auto-flow: dense;
+  display:inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 250px 200px;
   justify-content: center;
   align-items: center;
-  margin: 0 5rem;
-  list-style: none;
+  grid-gap: 6px;
+  margin: 0 3rem;
+
  }
 
  .friends-image{
-  max-width: 50%;
+  max-width: 40%;
+  display: inline;
+  align-self: center;
 }
 
 .repo-button{
-  background-color: chartreuse;
+  background-color: rgb(187, 0, 255);
   max-width: 30%;
   margin-left: 21.5%;
+  display: inline;
+  align-self: center; 
+}
 
+.input{
+  box-shadow: 1px 1px 1px 1px yellow;
+  margin-right: 5px;
+  background-color: lavender;
+  color:purple;
 }
 
 
