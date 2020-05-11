@@ -22,7 +22,7 @@ margin-left: 17%;
    display: flex;
    flex-direction: column;
    font-family: 'Balsamiq Sans', cursive;
-   margin-left: 35%;
+   margin-left: 38%;
    margin-top: 2%;
    color: rgb(49, 16, 120);
    width: 50%;
@@ -78,6 +78,8 @@ margin-left: 17%;
   margin-right: 5px;
   background-color: lavender;
   color:purple;
+  margin-left: -54px;
+
 }
 
 
